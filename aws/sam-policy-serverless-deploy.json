@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "00001",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CreateStack",
+                "cloudformation:CreateChangeSet",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeChangeSet",
+                "cloudformation:CreateChangeSet",
+                "cloudformation:ExecuteChangeSet",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:GetTemplateSummary",
+                "s3:*",
+                "iam:CreateRole",
+                "iam:DetachRolePolicy",
+                "iam:DeleteRole",
+                "iam:AttachRolePolicy",
+                "iam:GetRole",
+                "iam:PassRole",
+                "iam:CreateServiceLinkedRole",
+                "lambda:DeleteFunction",
+                "lambda:CreateFunction",
+                "lambda:TagResource",
+                "lambda:GetFunction",
+                "lambda:AddPermission",
+                "lambda:RemovePermission",
+                "lambda:UpdateFunctionCode",
+                "lambda:ListTags",
+                "apigateway:POST",
+                "apigateway:DELETE",
+                "apigateway:GET",
+                "apigateway:PATCH"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
